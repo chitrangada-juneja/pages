@@ -18,8 +18,8 @@ const SimpleInfoCard = ({ icon, title, value, color }) => (
   >
     {React.cloneElement(icon, { style: { color, fontSize: 20 } })}
     <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '8px', alignItems: 'center', fontSize: 16, flex: 1, justifyContent: 'space-between' }}>
-      <span style={{ fontWeight: 'bold', flexBasis: '40%', minWidth: '150px' }}>🏷️ {title}:</span>
-      <span style={{ color: '#555', flexBasis: '55%', minWidth: '150px' }}>📝 {value}</span>
+      <span style={{ fontWeight: 'bold', flexBasis: '40%', minWidth: '150px' }}>{title}:</span>
+      <span style={{ color: '#555', flexBasis: '55%', minWidth: '150px' }}> {value}</span>
     </div>
   </Card>
 );
@@ -36,8 +36,8 @@ const data = {
 
 const App = () => (
   <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#f0f2f5', minHeight: '100vh', padding: '32px 16px' }}>
-    <Card title={<span style={{ fontSize: 20, fontWeight: 'bold', display: 'flex', alignItems: 'center' }}><SoundOutlined style={{ marginRight: 8 }} /> Public Speaking Overview</span>}
-      style={{ width: '100%', maxWidth: 700, borderRadius: '16px', boxShadow: '0 4px 16px rgba(0,0,0,0.1)', backgroundColor: '#fff' }} bodyStyle={{ padding: 0 }}>
+    <Card title={<span style={{ fontSize: 20, fontWeight: 'bold', display: 'flex', alignItems: 'center' }}> 📋 Session Details</span>}
+      style={{ width: '100%', maxWidth: 1000, borderRadius: '16px', boxShadow: '0 4px 16px rgba(0,0,0,0.1)', backgroundColor: '#fff' }} bodyStyle={{ padding: 0 }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '24px' }}>
         <SimpleInfoCard icon={<SoundOutlined />} title="Speaking Scenario" value={data.scenario} color="#f5a623" />
         <SimpleInfoCard icon={<TeamOutlined />} title="Audience Details" value={data.audience} color="#007bff" />

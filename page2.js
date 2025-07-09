@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
 import {
-  ShopOutlined,
+ 
   UserOutlined,
   BulbOutlined,
   CheckCircleOutlined,
@@ -48,10 +48,10 @@ const SimpleInfoCard = ({ icon, title, value, color }) => {
         }}
       >
         <span style={{ fontWeight: 'bold', flexBasis: '40%', minWidth: '150px' }}>
-          🏷️ {title}:
+           {title}:
         </span>
         <span style={{ color: '#555', flexBasis: '55%', minWidth: '150px' }}>
-          📝 {value}
+           {value}
         </span>
       </div>
     </Card>
@@ -74,13 +74,13 @@ const InfoDisplay = ({ salesData }) => {
       <Card
         title={
           <span style={{ fontWeight: 'bold', color: 'black', fontSize: 20, display: 'flex', alignItems: 'center' }}>
-            <ShopOutlined style={{ marginRight: 8 }} />
-            Sales Scenario Overview
+            
+              📋 Session Details
           </span>
         }
         style={{
           width: '100%',
-          maxWidth: 700,
+          maxWidth: 1000,
           borderRadius: '16px',
           boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
           backgroundColor: '#fff',
